@@ -1,0 +1,138 @@
+"*":
+  editor:
+    showIndentGuide: true
+    fontSize: 12
+    invisibles: {}
+    fontFamily: "Menlo"
+    tabLength: 4
+    preferredLineLength: 100
+  core:
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
+    ]
+    themes: [
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+    hideGitIgnoredFiles: true
+    disabledPackages: [
+      "exception-reporting"
+      "metrics"
+      "jshint"
+      "language-javascript-jsx"
+      "js-autoimport"
+      "symbol-gen"
+      "sort-lines"
+      "search"
+      "npm-docs"
+      "minimap-selection"
+      "minimap-highlight-selected"
+      "minimap-git-diff"
+      "minimap-find-and-replace"
+      "minimap-bookmarks"
+      "minimap-autohide"
+      "minimap"
+      "compare-files"
+      "jsformat"
+      "language-html-swig"
+      "language-jade"
+      "node-resolver"
+      "javascript-snippets"
+      "welcome"
+    ]
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
+    ]
+  welcome:
+    showOnStartup: false
+  "release-notes":
+    viewedVersion: "0.89.0"
+  autosave:
+    enabled: true
+  "terminal-panel": {}
+  "terminal-status": {}
+  "atom-lint": {}
+  jsformat:
+    format_on_save: false
+    space_after_anon_function: true
+  linter:
+    showInfoMessages: true
+    statusBar: "Show error if the cursor is in range"
+    subtleLinterErrors: [
+      "jscs"
+      "shellcheck"
+    ]
+    ignoredLinterErrors: [
+      "jshint"
+    ]
+  "linter-jshint": {}
+  "linter-jscs":
+    messageType: "error"
+    onlyConfig: true
+  "atom-beautify":
+    _analyticsUserId: "0029b309-a045-493b-81a5-69746fb383cb"
+  "git-diff":
+    showIconsInEditorGutter: true
+  "local-history":
+    difftoolCommand: "opendiff \"{current-file}\" \"{revision-file}\""
+  "grunt-runner":
+    gruntPaths: [
+      "/usr/local/bin/grunt"
+    ]
+  tabs:
+    enableVcsColoring: true
+    tabScrolling: true
+    usePreviewTabs: true
+  minimap:
+    plugins:
+      selection: true
+      "minimap-autohide": true
+      "git-diff": true
+      "highlight-selected": true
+      "find-and-replace": true
+      bookmarks: true
+  "collaborative-edit":
+    DocumentName: "ServerStartTest.spec.js"
+  motepair: {}
+  "git-plus": {}
+  "git-blame-plus":
+    useCustomUrlTemplateIfStandardRemotesFail: true
+    customCommitUrlTemplateString: "https://github.intuit.com/<%- project %>/<%- repo %>/commit/<%- revision %>"
+  "git-blame":
+    useCustomUrlTemplateIfStandardRemotesFail: true
+    customCommitUrlTemplateString: "https://github.intuit.com/<%- project %>/<%- repo %>/commit/<%- revision %>"
+  "todo-show": {}
+  "linter-scss-lint":
+    executablePath: "/Users/kbrown12/.rvm/gems/ruby-1.9.3-p429/bin/scss-lint"
+  "fuzzy-finder": {}
+  "autocomplete-plus": {}
+  "tree-view": {}
+  "status-bar": {}
+  term2: {}
+".js.jsx.react.source":
+  editor:
+    preferredLineLength: 100
+".js.jsx.source":
+  editor:
+    preferredLineLength: 100
+".js.source.subtlegradient":
+  editor:
+    preferredLineLength: 100
+".html.swig.text":
+  editor:
+    preferredLineLength: 100
+".diff.source":
+  editor:
+    preferredLineLength: 100
+".ini.source":
+  editor:
+    preferredLineLength: 100
+    autoIndent: true
