@@ -13,3 +13,4 @@ git/gitconfig.symlink
 .dotfiles
 antigen
 cache
+vundle
