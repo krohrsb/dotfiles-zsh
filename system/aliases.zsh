@@ -6,3 +6,5 @@ alias note="atom -n ~/.notes"
 alias notes="note"
 # my common sshtun. usage: sshtun [args] <host>
 alias sshtun="ssh -D 5222 -C -N"
+# commandline dirstat. Lists directory sizes.
+alias dirstat='du -kxh | egrep -v "\./.+/" | sort ';
