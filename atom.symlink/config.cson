@@ -73,7 +73,8 @@
     ignoredLinterErrors: [
       "jshint"
     ]
-  "linter-jshint": {}
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
   "linter-jscs":
     messageType: "error"
     onlyConfig: true
@@ -117,6 +118,11 @@
   "tree-view": {}
   "status-bar": {}
   term2: {}
+  "git-projects":
+    ignoredPath: "/Users/kbrown12/dev/qbo;"
+    rootPath: "/Users/kbrown12/dev/"
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
 ".js.jsx.react.source":
   editor:
     preferredLineLength: 100
