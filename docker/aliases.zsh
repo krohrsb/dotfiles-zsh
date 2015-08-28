@@ -29,6 +29,9 @@ alias dex="docker exec -i -t"
 # Docker Compose alias
 alias dc="docker-compose"
 
+# Docker Machine alias
+alias dm="docker-machine"
+
 # Stop all containers
 dstop() { docker stop $(docker ps -a -q); }
 
