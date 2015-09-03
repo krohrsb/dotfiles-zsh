@@ -32,6 +32,9 @@ alias dc="docker-compose"
 # Docker Machine alias
 alias dm="docker-machine"
 
+# Docker Machine use alias
+dmuse() { eval "$(docker-machine env $1)"; }
+
 # Stop all containers
 dstop() { docker stop $(docker ps -a -q); }
 
@@ -55,3 +58,6 @@ dbu() { docker build -t=$1 .; }
 
 # Show all alias related docker
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+
+# SCP docker image to a remote docker instance
+dit() { docker save $1 | gzip | pv | ssh $2 'gunzip | docker load'; }
