@@ -43,6 +43,7 @@
       "node-resolver"
       "javascript-snippets"
       "welcome"
+      "symbols-view"
     ]
   "spell-check":
     grammars: [
@@ -127,19 +128,19 @@
 ".js.jsx.react.source":
   editor:
     preferredLineLength: 100
-".js.jsx.source":
+".html.swig.text":
   editor:
     preferredLineLength: 100
 ".js.source.subtlegradient":
   editor:
     preferredLineLength: 100
-".html.swig.text":
-  editor:
-    preferredLineLength: 100
-".diff.source":
+".js.jsx.source":
   editor:
     preferredLineLength: 100
 ".ini.source":
   editor:
     preferredLineLength: 100
     autoIndent: true
+".diff.source":
+  editor:
+    preferredLineLength: 100
