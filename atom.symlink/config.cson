@@ -16,7 +16,7 @@
       "vendor"
     ]
     themes: [
-      "one-dark-ui"
+      "atom-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
     hideGitIgnoredFiles: true
@@ -123,24 +123,25 @@
     rootPath: "/Users/kbrown12/dev/"
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
-    globalNodePath: "/Users/kbrown12/.nvm/v0.10.33"
-    useGlobalEslint: true
+    globalNodePath: "/usr/local/bin"
+  "one-dark-ui": {}
+  pigments: {}
 ".js.jsx.react.source":
   editor:
     preferredLineLength: 100
-".html.swig.text":
+".js.jsx.source":
   editor:
     preferredLineLength: 100
 ".js.source.subtlegradient":
   editor:
     preferredLineLength: 100
-".js.jsx.source":
+".html.swig.text":
+  editor:
+    preferredLineLength: 100
+".diff.source":
   editor:
     preferredLineLength: 100
 ".ini.source":
   editor:
     preferredLineLength: 100
     autoIndent: true
-".diff.source":
-  editor:
-    preferredLineLength: 100

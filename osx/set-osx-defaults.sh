@@ -531,9 +531,9 @@ defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -boo
 defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool false
 defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls -bool false
 
-# Use the system-native print preview dialog
-defaults write com.google.Chrome DisablePrintPreview -bool true
-defaults write com.google.Chrome.canary DisablePrintPreview -bool true
+# Do not Use the system-native print preview dialog
+defaults write com.google.Chrome DisablePrintPreview -bool false
+defaults write com.google.Chrome.canary DisablePrintPreview -bool false
 
 ###############################################################################
 # GPGMail 2                                                                   #

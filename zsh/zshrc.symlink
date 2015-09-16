@@ -77,9 +77,3 @@ unset config_files
 
 #remove any duplicates in our path
 typeset -U PATH
-
-###-tns-completion-start-###
-if [ -f /Users/kbrown12/.tnsrc ]; then
-    source /Users/kbrown12/.tnsrc
-fi
-###-tns-completion-end-###
