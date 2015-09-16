@@ -9,6 +9,16 @@
 # Directory info.
 local current_dir='${PWD/#$HOME/~}'
 
+# SSH INFO
+SESSION_TYPE=local
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+  SESSION_TYPE=remote/ssh
+else
+  case $(ps -o comm= -p $PPID) in
+    sshd|*/sshd) SESSION_TYPE=remote/ssh
+  esac
+fi
+
 # NVM Info
 ZSH_THEME_NVM_PROMPT_PREFIX="%Bv"
 ZSH_THEME_NVM_PROMPT_SUFFIX="%b"
@@ -45,9 +55,9 @@ ys_hg_prompt_info() {
 # Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $
 PROMPT="
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
-%{$fg[cyan]%}%n\
-%{$fg[white]%}@\
-%{$fg[cyan]%}%m \
+%{$fg[cyan]%}%n \
+%{$fg[white]%}at \
+%{$fg[cyan]%}${SESSION_TYPE} \
 %{$fg[white]%}in \
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${hg_info}\
@@ -59,8 +69,8 @@ if [[ "$USER" == "root" ]]; then
 PROMPT="
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
 %{$bg[yellow]%}%{$fg[cyan]%}%n%{$reset_color%} \
-%{$fg[white]%}@\
-%{$fg[cyan]%}%m \
+%{$fg[white]%}at \
+%{$fg[cyan]%}${SESSION_TYPE} \
 %{$fg[white]%}in \
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${hg_info}\
