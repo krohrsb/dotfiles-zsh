@@ -80,6 +80,9 @@
     onlyConfig: true
   "atom-beautify":
     _analyticsUserId: "0029b309-a045-493b-81a5-69746fb383cb"
+    js_space_after_anon_function: true
+    js_keep_function_indentation: true
+    js_end_with_newline: true
   "git-diff":
     showIconsInEditorGutter: true
   "local-history":
