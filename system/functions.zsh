@@ -48,3 +48,10 @@ function explain {
   # open url in the browser
   open $url
 }
+
+function hlog {
+  while read -r line
+  do
+    prettyjson $line 
+  done < "$1"
+}

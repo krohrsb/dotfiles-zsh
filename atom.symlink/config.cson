@@ -27,7 +27,6 @@
       "language-javascript-jsx"
       "js-autoimport"
       "symbol-gen"
-      "sort-lines"
       "search"
       "npm-docs"
       "minimap-selection"
@@ -132,22 +131,23 @@
   pigments: {}
   "merge-conflicts": {}
   build: {}
+  react: {}
 ".js.jsx.react.source":
   editor:
     preferredLineLength: 100
-".html.swig.text":
+".js.jsx.source":
   editor:
     preferredLineLength: 100
 ".js.source.subtlegradient":
   editor:
     preferredLineLength: 100
-".js.jsx.source":
+".html.swig.text":
+  editor:
+    preferredLineLength: 100
+".diff.source":
   editor:
     preferredLineLength: 100
 ".ini.source":
   editor:
     preferredLineLength: 100
     autoIndent: true
-".diff.source":
-  editor:
-    preferredLineLength: 100
